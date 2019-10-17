@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{144:function(o,n,i){o.exports={socialGroup:"socialmedialinks-module--socialGroup--3f_uk"}},160:function(o,n,i){},161:function(o,n,i){},224:function(o,n,i){o.exports={skillIcon:"skillicon-module--skillIcon--3ayvh"}},61:function(o,n,i){o.exports={menuBar:"menu-module--menuBar--3oTob"}}}]);
-//# sourceMappingURL=styles-37af1964d9616eacfa55.js.map
