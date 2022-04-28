@@ -15,26 +15,26 @@ jobs:
 
       # Restore our node_modules cache if we've run this before (likely!)
       - restore_cache:
-        keys:
-          - yarn-dependancies-{{checksum "yarn.lock"}}
-          # If the above isn't found then there should be a general cache here
-          - yarn-dependancies-
+          keys:
+            - yarn-dependencies-{{checksum "yarn.lock"}}
+            # If the above isn't found then there should be a general cache here
+            - yarn-dependencies-
 
-      # Make sure our dependancies are up to date
+      # Make sure our dependencies are up to date
       - run: yarn install
 
       # Save the up to date cache for future runs
       - save_cache:
-        paths:
-          - .node_modules
-        key: yarn-dependancies-{{checksum "yarn.lock"}}
+          paths:
+            - .node_modules
+          key: yarn-dependencies-{{checksum "yarn.lock"}}
 
       # Attempt to build the site
-      -run:
-        name: Build Gatsby Site
-        command: CI=true yarn build
+      - run:
+          name: Build Gatsby Site
+          command: CI=true yarn build
 
 workflows:
   test_build:
     jobs:
-      -build:
+      - build
