@@ -16,9 +16,9 @@ jobs:
       # Restore our node_modules cache if we've run this before (likely!)
       - restore_cache:
         keys:
-          -yarn-dependancies-{{checksum "yarn.lock"}}
+          - yarn-dependancies-{{checksum "yarn.lock"}}
           # If the above isn't found then there should be a general cache here
-          -yarn-dependancies-
+          - yarn-dependancies-
 
       # Make sure our dependancies are up to date
       - run: yarn install
@@ -27,7 +27,7 @@ jobs:
       - save_cache:
         paths:
           - .node_modules
-        key: yarn dependancies-{{checksum "yarn.lock"}}
+        key: yarn-dependancies-{{checksum "yarn.lock"}}
 
       # Attempt to build the site
       -run:
