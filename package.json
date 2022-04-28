@@ -2,8 +2,8 @@
   "name": "stuart-hicks-web-dev",
   "version": "1.0.0",
   "private": true,
-  "description": "Stuart Hicks - Web Dev",
-  "author": "shicks1080",
+  "description": "A portfolio website for the developer Stuart Hicks",
+  "author": "Stuart Hicks",
   "keywords": [
     "gatsby"
   ],
@@ -30,5 +30,12 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.29",
+    "@types/react": "^18.0.8",
+    "@types/react-dom": "^18.0.0",
+    "@types/react-helmet": "^6.1.5",
+    "typescript": "^4.6.3"
   }
 }
