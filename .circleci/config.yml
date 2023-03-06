@@ -1,7 +1,7 @@
 version: 2.1
 jobs:
   build: 
-    working_directory: ~/repo
+    working_directory: ~/repo/stuart-hicks/frontend
 
     docker: 
       - image: cimg/node:17.5.0
