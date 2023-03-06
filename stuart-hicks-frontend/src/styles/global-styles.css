@@ -1,0 +1,20 @@
+@import './global-variables.css';
+
+body {
+  background-color: var(--primary-contrast);
+  font-family: var(--default-font);
+  margin: 0;
+}
+
+h1 {
+  color: var(--primary-dark);
+}
+
+/*
+Remove the title on a mobile sized device as invluded on the Menu Bar
+*/
+@media screen and (max-width: 576px) {
+  h1 {
+    display: none;
+  }
+}
