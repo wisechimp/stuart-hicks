@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react"
+
+import Menu from "../menu/Menu"
+import menulinks from "../../data/menulinks"
 
 interface LayoutProps {
   pageTitle: string
 }
 
 const Layout = ({ pageTitle }: LayoutProps) => {
-  return(
-  <h1>{pageTitle}</h1>
+  return (
+    <>
+      <Menu menuLinks={menulinks} />
+      <h1>{pageTitle}</h1>
+    </>
   )
 }
 
