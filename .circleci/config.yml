@@ -1,9 +1,9 @@
 version: 2.1
 jobs:
-  build: 
-    working_directory: ~/repo/stuart-hicks/frontend
+  build:
+    working_directory: ~/repo/stuart-hicks-frontend
 
-    docker: 
+    docker:
       - image: cimg/node:17.5.0
 
     steps:
