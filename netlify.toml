@@ -1,2 +1,5 @@
 [build]
   base = "stuart-hicks-frontend"
+
+[context.production]
+  environment = { NODE_VERSION = "18.13.0" }
