@@ -53,7 +53,7 @@ export default defineType({
     },
     prepare(selection) {
       const {date} = selection
-      return {...selection, subtitle: `Completed on ${date}`}
+      return {...selection, subtitle: `Completed ${date}`}
     },
   },
 })

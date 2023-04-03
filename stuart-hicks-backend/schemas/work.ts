@@ -11,6 +11,11 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'link',
+      title: 'Link',
+      type: 'url',
+    }),
+    defineField({
       name: 'slug',
       title: 'Slug',
       type: 'slug',
@@ -53,7 +58,7 @@ export default defineType({
     },
     prepare(selection) {
       const {date} = selection
-      return {...selection, subtitle: `Completed on ${date}`}
+      return {...selection, subtitle: `Worked on ${date}`}
     },
   },
 })
