@@ -2,6 +2,9 @@ name: Deploy Website
 
 on: [push]
 
+env:
+  BRANCH_NAME: ${{ github.ref_name }}
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -21,5 +24,22 @@ jobs:
           cache: yarn
       - run: yarn install --immutable
 
+      - name: Install Netlify
+        run: yarn install netlify-cli@17.34.3
+
       - name: Install Dependencies
         run: yarn install
+
+      - name: Build project
+        run: yarn build
+
+      - name: Deploy to Netlify
+        id: netlify_deploy
+        run: |
+          prod_flag=""
+          if [ "$BRANCH_NAME" = "main" ]; then prod_flag="--prod"; fi
+          netlify deploy \
+            --dir build \
+            --site ${{ secrets.NETLIFY_SITE_ID }} \
+            --auth ${{ secrets.NETLIFY_API_TOKEN }} \
+            $prod_flag
