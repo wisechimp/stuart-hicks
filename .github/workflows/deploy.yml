@@ -25,7 +25,7 @@ jobs:
       - run: yarn install --immutable
 
       - name: Install Netlify
-        run: yarn install netlify-cli@17.34.3
+        run: yarn add netlify-cli@17.34.3
 
       - name: Install Dependencies
         run: yarn install
