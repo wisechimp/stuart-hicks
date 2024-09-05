@@ -1,17 +1,19 @@
-import React from "react"
+import React, { ReactNode } from 'react'
 
-import Menu from "../menu/Menu"
-import menulinks from "../../data/menulinks"
+import Menu from '../menu/Menu'
+import menulinks from '../../data/menulinks'
 
 interface LayoutProps {
   pageTitle: string
+  children: ReactNode
 }
 
-const Layout = ({ pageTitle }: LayoutProps) => {
+const Layout = ({ pageTitle, children }: LayoutProps) => {
   return (
     <>
       <Menu menuLinks={menulinks} />
       <h1>{pageTitle}</h1>
+      {children}
     </>
   )
 }

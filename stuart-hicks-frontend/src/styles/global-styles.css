@@ -2,7 +2,7 @@
 
 body {
   background-color: var(--primary-contrast);
-  font-family: var(--default-font);
+  font-family: 'Calibri', sans-serif;
   margin: 0;
 }
 
@@ -16,5 +16,15 @@ Remove the title on a mobile sized device as invluded on the Menu Bar
 @media screen and (max-width: 576px) {
   h1 {
     display: none;
+  }
+}
+
+/*
+Margin when screen is very wide
+*/
+@media screen and (min-width: 957px) {
+  body {
+    margin: auto;
+    max-width: 956px;
   }
 }

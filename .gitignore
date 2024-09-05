@@ -1,5 +1,7 @@
 node_modules/
-.cache/
-public
+.vscode
+.yarn
 images
-stuart-hicks-frontend/src/gatsby-types.d.ts
+
+.next
+build

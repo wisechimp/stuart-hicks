@@ -1,24 +1,24 @@
 const menulinks = [
-  {
+  /* {
     key: 1,
-    to: "/",
-    linktext: "Home",
-  },
+    to: '/',
+    linktext: 'Home',
+  }, */
   {
     key: 2,
-    to: "/about",
-    linktext: "About",
+    to: '/work',
+    linktext: 'Work',
   },
   {
     key: 3,
-    to: "/contact",
-    linktext: "Contact",
-  } /* ,
+    to: '/projects',
+    linktext: 'Projects',
+  },
   {
     key: 4,
-    to: "/dashboard",
-    linktext: "Account",
-  } */,
+    to: '/contact',
+    linktext: 'Contact',
+  },
 ]
 
 export default menulinks
