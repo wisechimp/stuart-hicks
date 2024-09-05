@@ -9,14 +9,13 @@ jobs:
       - name: Repo Checkout
         uses: actions/checkout@v4
 
-      - name: Enable Corepack for Yarn v4 before Node Setup
-        run: corepack enable
-
       - name: Setup NodeJS
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: yarn
+
+      - name: Install Yarn
+        run: yarn
 
       - name: Install Dependencies
         run: yarn ci
