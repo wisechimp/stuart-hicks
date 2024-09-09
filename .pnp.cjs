@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
       [null, {\
         "packageLocation": "./",\
         "packageDependencies": [\
+          ["@types/gtag.js", "npm:0.0.20"],\
           ["@types/node", "npm:22.5.4"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
@@ -144,6 +145,15 @@ const RAW_RUNTIME_STATE =
           ["@swc/helpers", "npm:0.5.5"],\
           ["@swc/counter", "npm:0.1.3"],\
           ["tslib", "npm:2.7.0"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
+    ["@types/gtag.js", [\
+      ["npm:0.0.20", {\
+        "packageLocation": "../../../../../C:/Users/shicks/AppData/Local/Yarn/Berry/cache/@types-gtag.js-npm-0.0.20-b10897fde5-10c0.zip/node_modules/@types/gtag.js/",\
+        "packageDependencies": [\
+          ["@types/gtag.js", "npm:0.0.20"]\
         ],\
         "linkType": "HARD"\
       }]\
@@ -404,6 +414,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["stuart-hicks", "workspace:."],\
+          ["@types/gtag.js", "npm:0.0.20"],\
           ["@types/node", "npm:22.5.4"],\
           ["@types/react", "npm:18.3.5"],\
           ["@types/react-dom", "npm:18.3.0"],\
