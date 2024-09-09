@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import GoogleAnalytics from '../components/google-analytics'
 
 export const metadata: Metadata = {
   title: 'Stuart Hicks - Frontend Dev',
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body>
         <div id="root">{children}</div>
       </body>
