@@ -5,7 +5,7 @@
   "description": "stuart-hicks",
   "author": "Stuart Hicks",
   "keywords": [
-    "Stuart Hicks portfolio"
+    "Stuart Hicks frontend portfolio"
   ],
   "scripts": {
     "dev": "next dev",
@@ -19,6 +19,7 @@
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
+    "@types/gtag.js": "^0.0.20",
     "@types/node": "^22.5.4",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
