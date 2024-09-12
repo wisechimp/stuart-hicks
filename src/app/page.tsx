@@ -4,7 +4,7 @@ const Home = () => {
   return (
     <main>
       <div>
-        <h1>Welcome to Stuart Hicks'</h1>
+        <h1>Welcome to Stuart Hicks`apos;`</h1>
         <p>
           View previous projects demonstrating my frontend experience and take
           the opportunity to <Link href="/contact">Contact Me</Link>.
