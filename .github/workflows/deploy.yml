@@ -32,6 +32,8 @@ jobs:
 
       - name: Build project
         run: yarn build
+        env:
+          NEXT_PUBLIC_MEASUREMENT_ID: ${{ vars.NEXT_PUBLIC_MEASUREMENT_ID }}
 
       - name: Deploy to Netlify
         id: netlify_deploy
