@@ -1,13 +1,18 @@
 import Image from 'next/image'
+import heroData from '../../dummyData/heroData'
 
 const HeroImage = () => {
+  const { text, imageSrc, imageAltText } = heroData
   return (
+    <div>
     <Image
-      src="https://placehold.co/900x500"
+      src={imageSrc}
       width={900}
       height={500}
-      alt="A placeholder image with numbers showing the pixel dimensions of the image"
+      alt={imageAltText}
     />
+    <p>{text}</p>
+    </div>
   )
 }
 

@@ -1,15 +1,19 @@
 import Image from 'next/image'
+import infoCardData from '../../dummyData/infoCardData'
 
 const InfoCard = () => {
+  const { title, text, imageSrc, imageAltText } = infoCardData
+
   return (
     <div>
-      <h2>Heading</h2>
+      <h2>{title}</h2>
       <Image
-        src="https://placehold.co/300x200"
+        src={imageSrc}
         width={300}
         height={200}
-        alt="A placeholder image showing the dimensions in pixels"
+        alt={imageAltText}
       />
+      <p>{text}</p>
     </div>
   )
 }
