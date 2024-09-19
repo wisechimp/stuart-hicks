@@ -1,0 +1,9 @@
+.buttonLink {
+  align-self: flex-end;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  color: var(--primary-color-light);
+  padding: 1em;
+  text-decoration: none;
+  width: fit-content;
+}

@@ -1,6 +1,8 @@
 import type { Metadata } from 'next'
 import { GoogleAnalytics } from '@next/third-parties/google'
 
+import './global.css'
+
 export const metadata: Metadata = {
   title: 'Stuart Hicks - Frontend Dev',
   description:
