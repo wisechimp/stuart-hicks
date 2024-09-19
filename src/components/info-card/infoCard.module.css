@@ -1,0 +1,9 @@
+.infoCardContainer {
+  background-color: var(--primary-color-light);
+  border-radius: 25px;
+  max-width: 350px;
+}
+
+.infoCardText {
+  padding: 1em;
+}

@@ -1,0 +1,19 @@
+.heroImageContainer {
+  margin-bottom: 2em;
+  margin-inline: auto;
+  max-width: fit-content;
+  position: relative;
+}
+
+.heroImageCaption {
+  bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  right: 1em;
+}
+
+.heroImageCaptionText {
+  padding: 1em 0;
+}
